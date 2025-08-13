@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package user_system;
+
+message User {
+    int32 id = 1;  // 用户ID
+    string name = 2;  // 用户名
+    string email = 3;  // 用户邮箱
+    UserType type = 4;  // 用户类型
+    
+}

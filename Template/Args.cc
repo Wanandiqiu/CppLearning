@@ -15,6 +15,8 @@ auto sub(Args ...args)
 
 int main()
 {
+    int && ref = 10;
+
     std::cout << add(1, 2, 3, 4, 5) << std::endl;
     std::cout << add(1.1, 2.2, 3.3, 4.4, 5.5) << std::endl;
 

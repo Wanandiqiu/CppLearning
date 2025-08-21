@@ -1,0 +1,10 @@
+<order>
+    <Goods ID="1">
+        <price>6999</price>
+        <brand>HUAWEI</brand>
+    </Goods>
+    <Goods ID="2">
+        <price>10999</price>
+        <brand>MacBook</brand>
+    </Goods>
+</order>

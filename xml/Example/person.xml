@@ -1,0 +1,24 @@
+<Persons>
+    <Person ID="1">
+        <name>周星星</name>
+        <age>20</age>
+    </Person>
+    <Person ID="2">
+        <name>张三</name>
+        <age>21</age>
+    </Person>
+</Persons>
+
+
+<Order>
+    <item ID="1">
+        <goddsName>周星星</goddsName>
+        <count>20</count>
+    </item>
+    <item ID="2">
+        <name>张三</name>
+        <age>21</age>
+    </item>
+    <totalPrice> 199</totalPrice>
+</Order>
+

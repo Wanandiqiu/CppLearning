@@ -93,6 +93,48 @@ void testSetFind()
     }
 }
 
+
+class Point
+{
+public:
+    Point() = default;
+    Point(int x, int y)
+        : _x(x), _y(y)
+    {
+    }
+
+    int getX() const
+    {
+        return _x;
+    }
+
+    int getY() const
+    {
+        return _y;
+    }
+
+private:
+    int _x;
+    int _y;
+};
+
+template <>
+struct std::less<Point>
+{
+    bool operator()(const Point &lhs, const Point &rhs) const
+    {
+        return lhs.getX() > rhs.getX() && lhs.getY() > rhs.getY();
+    }
+};
+
+struct MyCompare
+{
+    bool operator()(const Point &lhs, const Point &rhs) const
+    {
+        return lhs.getX() > rhs.getX() && lhs.getY() > rhs.getY();
+    }
+};
+
 int main()
 {
     // testSetCount();
@@ -100,6 +142,9 @@ int main()
     // testSetInsert();
     testSetInsert2();
     // testSet();
+
+    std::set<Point, MyCompare> pt {Point(1, 2), Point(2, 3)};
+
 
     return 0;
 }
